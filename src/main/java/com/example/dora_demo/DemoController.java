@@ -8,12 +8,12 @@ public class DemoController {
 
     @GetMapping("/")
     public String home() {
-        return "DORA Demo Service Running v1";
+        return "DORA Demo Service Running v3";
     }
 
     @GetMapping("/health")
     public String health() {
-        throw new RuntimeException("Database Connection Failed");
+        return "OK";
     }
 
     @GetMapping("/login")
