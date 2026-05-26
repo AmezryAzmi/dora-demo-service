@@ -13,7 +13,7 @@ public class DemoController {
 
     @GetMapping("/health")
     public String health() {
-        return "OK";
+        throw new RuntimeException("Database Connection Failed");
     }
 
     @GetMapping("/login")
