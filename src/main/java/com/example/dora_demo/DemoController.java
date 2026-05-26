@@ -23,6 +23,6 @@ public class DemoController {
 
     @GetMapping("/payment")
     public String payment() {
-        throw new RuntimeException("Payment Gateway Timeout");
+        return "Payment API Ready";
     }
 }
