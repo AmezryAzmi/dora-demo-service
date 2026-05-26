@@ -13,6 +13,6 @@ public class DemoController {
 
     @GetMapping("/health")
     public String health() {
-        return "OK";
+        return "DORA Demo Service Running";
     }
 }
