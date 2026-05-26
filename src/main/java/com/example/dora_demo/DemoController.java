@@ -1,4 +1,4 @@
-package com.example.dora_demo;
+package com.example.dorademo;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,11 +8,16 @@ public class DemoController {
 
     @GetMapping("/")
     public String home() {
-        return "DORA Demo Service Running";
+        return "DORA Demo Service Running v1";
     }
 
     @GetMapping("/health")
     public String health() {
-        return "DORA Demo Service Running";
+        return "OK";
+    }
+
+    @GetMapping("/login")
+    public String login() {
+        return "Login API Ready";
     }
 }
