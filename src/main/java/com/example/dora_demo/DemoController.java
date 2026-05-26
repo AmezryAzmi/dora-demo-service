@@ -8,7 +8,7 @@ public class DemoController {
 
     @GetMapping("/")
     public String home() {
-        return "DORA Demo Service Running v4";
+        return "DORA Demo Service Running v5";
     }
 
     @GetMapping("/health")
@@ -23,6 +23,6 @@ public class DemoController {
 
     @GetMapping("/payment")
     public String payment() {
-        return "Payment API Ready";
+        throw new RuntimeException("Payment Gateway Timeout");
     }
 }
